@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn_Activity"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL/USERNAME"
+        android:id="@+id/userName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        android:id="@+id/password"
+        />
+    <LinearLayout
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:id="@+id/Login"
+            android:onClick="login"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:id="@+id/SignUp"
+            android:gravity="right"
+            android:onClick="signUp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google SIGN UP"
+            android:id="@+id/googleLogin"
+            android:gravity="right"
+            android:onClick="Googlesignin"
+            />
+
+    </LinearLayout>
+</LinearLayout>
